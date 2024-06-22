@@ -12,15 +12,15 @@ TARGET_UPSTREAM = "https://registry-1.docker.io"
 
 [env.production]
 name = "cloudflare-docker-proxy"
-routes = [
-  { pattern = "docker.kwang.fun", custom_domain = true },
-  { pattern = "quay.kwang.fun", custom_domain = true },
-  { pattern = "gcr.kwang.fun", custom_domain = true },
-  { pattern = "k8s-gcr.kwang.fun", custom_domain = true },
-  { pattern = "k8s.kwang.fun", custom_domain = true },
-  { pattern = "ghcr.kwang.fun", custom_domain = true },
-  { pattern = "cloudsmith.kwang.fun", custom_domain = true },
-]
+# routes = [
+#   { pattern = "docker.kwang.fun", custom_domain = true },
+#   { pattern = "quay.kwang.fun", custom_domain = true },
+#   { pattern = "gcr.kwang.fun", custom_domain = true },
+#   { pattern = "k8s-gcr.kwang.fun", custom_domain = true },
+#   { pattern = "k8s.kwang.fun", custom_domain = true },
+#   { pattern = "ghcr.kwang.fun", custom_domain = true },
+#   { pattern = "cloudsmith.kwang.fun", custom_domain = true },
+# ]
 
 [env.production.vars]
 MODE = "production"
